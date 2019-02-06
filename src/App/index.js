@@ -9,6 +9,12 @@ const App = () => {
     setTodos(newTodos);
   };
 
+  const deleteTodo = index => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  };
+
   return (
     <div className="App">
       <h1>Hooks</h1>
