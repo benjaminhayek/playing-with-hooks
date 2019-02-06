@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Hooks</h1>
-      </div>
-    );
-  }
+const App = () => {
+  const [todos, setTodos] = useState([])
+
+  return (
+    <div className="App">
+      <h1>Hooks</h1>
+    </div>
+  );
 }
 
 export default App;
