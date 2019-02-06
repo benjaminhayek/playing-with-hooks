@@ -3,6 +3,13 @@ import React, { useState } from 'react';
 const Form = () => {
     const [value, setValue] = useState('');
 
+    const handleSubmit = e => {
+        e.preventDefault();
+        if (!value) return;
+        addTodo(value);
+        setValue('');
+    };
+
     return (
       <form>
         <input
