@@ -21,12 +21,16 @@ const App = () => {
     <div className="App">
       <h1>Hooks</h1>
       <Form addTodo={addTodo}/>
-      <Todo
-        key={index}
-        index={index}
-        deleteTodo={deleteTodo}
-        text={todo.text}
-      />
+      <div>
+        {todos.map((todo, index) => (
+          <Todo
+            key={index}
+            index={index}
+            deleteTodo={deleteTodo}
+            text={todo.text}
+          />
+        ))}
+      </div>
     </div>
   );
 }
