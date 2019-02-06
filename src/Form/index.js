@@ -11,12 +11,14 @@ const Form = () => {
     };
 
     return (
-      <form>
+    <form onSubmit={handleSubmit}>
         <input
-          type='text'
-          placeholder='Add a todo'
+        value={value}
+        type="text"
+        onChange={e => setValue(e.target.value)}
+        placeholder="Add a todo"
         />
-      </form>
+    </form>
     );
   };
 
