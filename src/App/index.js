@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>Hooks</h1>
-      <Form />
+      <Form addTodo={addTodo}/>
     </div>
   );
 }
